@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Autos Deportivos</title>
+
+  <!-- Fuente bonita -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      color: #333;
+      background: #f5f7fa;
+      text-align: center;
+    }
+
+    /* Fondo partículas */
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    }
+
+    /* Contenido */
+    .container {
+      padding: 100px 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    /* Botones */
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      background: #2196f3;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1976d2;
+    }
+
+    /* Secciones */
+    section {
+      min-height: 100vh;
+      padding: 100px 20px;
+    }
+
+    #modelos { background: #ffffff; }
+    #contacto { background: #f1f8ff; }
+    #comprar { background: #e3f2fd; }
+
+  </style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<!-- HOME -->
+<div class="container">
+  <h1>Autos Deportivos</h1>
+  <p>Descubre los mejores autos de alto rendimiento</p>
+
+  <a href="#modelos" class="btn">Modelos</a>
+  <a href="#contacto" class="btn">Contacto</a>
+  <a href="#comprar" class="btn">Comprar</a>
+</div>
+
+<!-- MODELOS -->
+<section id="modelos">
+  <h1>Modelos</h1>
+  <p>Ferrari, Lamborghini, Porsche</p>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <h1>Contacto</h1>
+  <p>Email: contacto@autos.com</p>
+</section>
+
+<!-- COMPRAR -->
+<section id="comprar">
+  <h1>Comprar</h1>
+  <p>Agenda tu compra o solicita información</p>
+</section>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 60 },
+    size: { value: 3 },
+    move: { speed: 1.5 },
+    line_linked: {
+      enable: true,
+      distance: 150
+    }
+  }
+});
+</script>
+
+</body>
+</html>
