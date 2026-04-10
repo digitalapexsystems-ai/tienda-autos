@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grupo Mega 3D</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0d0d0d;
+  color: white;
+  text-align: center;
+}
+
+/* 🔥 HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Título tipo logo */
+h1 {
+  font-size: clamp(35px, 8vw, 70px);
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+/* Botones */
+.botones {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #cccccc;
+  transform: translateY(-3px);
+}
+
+/* Secciones */
+section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contacto { background: #111; }
+#quienes { background: #1a1a1a; }
+#trabajos { background: #222; }
+
+/* Botón volver */
+.volver {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: white;
+  color: black;
+  text-decoration: none;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .botones {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🔥 INICIO -->
+<div class="hero" id="inicio">
+  <h1>GRUPO MEGA 3D</h1>
+  
+  <div class="botones">
+    <a href="#contacto" class="btn">Contacto</a>
+    <a href="#quienes" class="btn">Quiénes Somos</a>
+    <a href="#trabajos" class="btn">Trabajos</a>
+  </div>
+</div>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <h1>Contacto</h1>
+  <p>Correo: contacto@meg3d.com</p>
+  <p>Tel: +52 123 456 7890</p>
+
+  <a href="#inicio" class="volver">⬅ Volver al inicio</a>
+</section>
+
+<!-- QUIENES SOMOS -->
+<section id="quienes">
+  <h1>Quiénes Somos</h1>
+  <p>Somos un equipo especializado en diseño e impresión 3D.</p>
+
+  <a href="#inicio" class="volver">⬅ Volver al inicio</a>
+</section>
+
+<!-- TRABAJOS -->
+<section id="trabajos">
+  <h1>Trabajos</h1>
+  <p>Aquí puedes mostrar tus proyectos o imágenes.</p>
+
+  <a href="#inicio" class="volver">⬅ Volver al inicio</a>
+</section>
+
+</body>
+</html>
